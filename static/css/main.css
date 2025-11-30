@@ -1,0 +1,74 @@
+/* layout safety for fixed navbar */
+.site-main {
+  padding-top: 72px; /* adjust to navbar height (70-80px) */
+}
+
+/* page background and robotic vibe */
+body {
+  background: radial-gradient(circle at 10% 10%, #0b0b0b 0%, #000000 60%);
+  color: #e6f7ff;
+  font-family: Calibri, Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* center wrapper */
+.robotic-wrapper {
+  min-height: calc(100vh - 120px);
+  padding-top: 20px;
+}
+
+/* card */
+.robotic-card {
+  width: 420px;
+  background: linear-gradient(180deg, rgba(10,10,12,0.95), rgba(18,18,20,0.9));
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.7), 0 0 18px rgba(0, 180, 255, 0.06) inset;
+  padding: 28px;
+  border: 1px solid rgba(0,180,255,0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+/* neon title */
+.robotic-title {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #bff0ff;
+  text-shadow: 0 0 8px rgba(0,180,255,0.35);
+}
+
+/* inputs */
+.robotic-input {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #dff9ff;
+  padding: 10px 12px;
+  border-radius: 6px;
+  outline: none;
+  transition: box-shadow .18s ease, transform .08s ease;
+  font-family: inherit;
+}
+
+.robotic-input:focus {
+  box-shadow: 0 0 18px rgba(0,180,255,0.16);
+  transform: translateY(-1px);
+  border-color: rgba(0,180,255,0.6);
+}
+
+/* button */
+.robotic-btn {
+  background: linear-gradient(90deg, rgba(0,180,255,0.12), rgba(0,120,255,0.16));
+  border: 1px solid rgba(0,180,255,0.5);
+  color: #e9ffff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/* small responsive tweak */
+@media (max-width: 540px) {
+  .robotic-card { width: 92%; padding: 18px; }
+}
