@@ -28,6 +28,6 @@ This project allows users to manage products, stock levels, and categories with 
 
 ---
 
-## 📂 Project Setup
+
 
 
